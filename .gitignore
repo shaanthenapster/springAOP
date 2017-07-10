@@ -1,0 +1,114 @@
+# Created by .ignore support plugin (hsz.mobi)
+<<<<<<< HEAD
+# Gradle
+# ------
+.gradle
+/build
+/buildSrc/build
+/subprojects/*/build
+/subprojects/docs/src/samples/*/*/build
+/subprojects/internal-android-performance-testing/build-android-libs
+
+# IDEA
+# ----
+.idea
+.shelf
+/*.iml
+/*.ipr
+/*.iws
+/buildSrc/*.iml
+/buildSrc/*.ipr
+/buildSrc/*.iws
+/buildSrc/out
+/out
+/subprojects/*/*.iml
+/subprojects/*/out
+
+# Eclipse
+# -------
+*.classpath
+*.project
+*.settings
+/bin
+/subprojects/*/bin
+atlassian-ide-plugin.xml
+
+# NetBeans
+# --------
+.nb-gradle
+.nb-gradle-properties
+
+# Vim
+# ---
+*.sw[op]
+
+# Emacs
+# -----
+*~
+
+# Textmate
+# --------
+.textmate
+
+# Sublime Text
+# ------------
+*.sublime-*
+
+# jEnv
+# ----
+.java-version
+
+# OS X
+# ----
+.DS_Store
+
+# HPROF
+# -----
+*.hprof
+
+# Work dirs
+# ---------
+/incoming-distributions
+/intTestHomeDir
+
+# Logs
+# ----
+/*.log
+
+# oh-my-zsh gradle plugin
+.gradletasknamecache
+=======
+# .gitignore for Grails 1.2 and 1.3
+# Although this should work for most versions of grails, it is
+# suggested that you use the "grails integrate-with --git" command
+# to generate your .gitignore file.
+
+# web application files
+/web-app/WEB-INF/classes
+
+# default HSQL database files for production mode
+/prodDb.*
+
+# general HSQL database files
+*Db.properties
+*Db.script
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+
+# project release file
+/*.war
+
+# plugin release files
+/*.zip
+/plugin.xml
+
+# older plugin install locations
+/plugins
+/web-app/plugins
+
+# "temporary" build files
+/target
+>>>>>>> af11ef0ee9b1919648c73cb812d5aa553dd2e056

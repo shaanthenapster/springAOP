@@ -7,8 +7,9 @@ import java.io.IOException;
  */
 //question1
 public class Triangle {
-    public void display() throws IOException {
+    @Deprecated
+    public void display()  {
         System.out.println("inside triangle class display method :");
-        throw new IOException();
+
     }
 }

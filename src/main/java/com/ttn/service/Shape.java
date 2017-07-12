@@ -1,13 +1,12 @@
-package com.ttn.spring;
+package com.ttn.service;
+
+import com.ttn.component.Circle;
+import com.ttn.component.Triangle;
 
 /**
- * Created by shaan on 9/7/17.
+ * Created by shaan on 12/7/17.
  */
-//Question1
-public class ShapeService {
-    private Circle circle;
-    private Triangle triangle;
-
+public class Shape {
     public Circle getCircle() {
         return circle;
     }
@@ -23,4 +22,7 @@ public class ShapeService {
     public void setTriangle(Triangle triangle) {
         this.triangle = triangle;
     }
+
+    Circle circle;
+    Triangle triangle;
 }

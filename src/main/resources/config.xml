@@ -8,12 +8,10 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
 
     <aop:aspectj-autoproxy />
-    <bean id="triangle" class="com.ttn.spring.Triangle">
-        <property name="name" value ="Equilateral Triangle"/>
+    <bean id="triangle" class="com.ttn.component.Triangle">
     </bean>
-    <bean id="circle" class="com.ttn.spring.Circle">
-       <property name="name" value=" Small Circle"/>
+    <bean id="circle" class="com.ttn.component.Circle">
     </bean>
-    <bean id="shapeservices" class="com.ttn.spring.ShapeService" autowire="byName"/>
-    <bean id="loggingaspect" class="com.ttn.spring.LoggingAspect"/>
+    <bean id="loggingaspect" class="com.ttn.aspect.LoggingAspect"/>
+    <bean id="shape" class="com.ttn.service.Shape" autowire="byName"/>
 </beans>

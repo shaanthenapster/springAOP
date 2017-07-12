@@ -11,12 +11,12 @@ import java.io.IOException;
 //question1
 @Aspect
 public class LoggingAspect {
-   @Before("within(com.ttn.component.*)")
+   @Before("args(String)")
     void displayInvoked(JoinPoint joinPoint){
         System.out.println("display before invoked ::"+joinPoint.getSignature().getName());
     }
 
-    @After("within(com.ttn.component.*)")
+    @After("args(String)")
     void displayAfterInvoked(JoinPoint joinPoint)
     {
         System.out.println("display after invoked ::"+joinPoint.getSignature().getName());

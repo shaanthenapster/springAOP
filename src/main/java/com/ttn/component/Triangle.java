@@ -7,8 +7,8 @@ import java.io.IOException;
  */
 //question1
 public class Triangle {
-    public void display()  {
-        System.out.println("inside triangle class display method :");
+    public void display(String name)  {
+        System.out.println("inside triangle class display method :"+name);
 
     }
 }

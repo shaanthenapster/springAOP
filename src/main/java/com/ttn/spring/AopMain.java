@@ -16,7 +16,7 @@ public class AopMain {
     public static void main(String[] args) throws IOException {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config.xml");
         Shape shape = applicationContext.getBean("shape",Shape.class);
-        shape.getCircle().display();
-        shape.getTriangle().display();
+        shape.getCircle().display("Circle");
+        shape.getTriangle().display("Triangle");
     }
 }

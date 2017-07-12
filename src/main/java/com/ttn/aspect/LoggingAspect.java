@@ -13,12 +13,12 @@ import java.io.IOException;
 public class LoggingAspect {
    @Before("displayeverything()")
     void displayInvoked(JoinPoint joinPoint){
-        System.out.println("display before invoked ::"+joinPoint.getSignature().getName());
+        System.out.println("display before invoked ::"+joinPoint.getSignature());
     }
 
     @After("displayeverything()")
     void displayAfterInvoked(JoinPoint joinPoint) {
-        System.out.println("display after invoked ::" + joinPoint.getSignature().getName());
+        System.out.println("display after invoked ::" + joinPoint.getSignature());
     }
     @Pointcut("execution(void display())")
     void displayeverything(){}

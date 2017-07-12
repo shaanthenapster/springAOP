@@ -1,7 +1,4 @@
 package com.ttn.spring;
-
-import com.ttn.component.Circle;
-import com.ttn.component.Triangle;
 import com.ttn.service.Shape;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,7 +13,7 @@ public class AopMain {
     public static void main(String[] args) throws IOException {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config.xml");
         Shape shape = applicationContext.getBean("shape",Shape.class);
-        shape.getCircle().display("Circle");
-        shape.getTriangle().display("Triangle");
+        shape.getCircle().display();
+        shape.getTriangle().display();
     }
 }

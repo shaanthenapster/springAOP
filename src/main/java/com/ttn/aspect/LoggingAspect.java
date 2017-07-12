@@ -11,16 +11,26 @@ import java.io.IOException;
 //question1
 @Aspect
 public class LoggingAspect {
-   @Before("args(String)")
+   @Before("this(com.ttn.component.Circle)")
     void displayInvoked(JoinPoint joinPoint){
         System.out.println("display before invoked ::"+joinPoint.getSignature().getName());
     }
 
-    @After("args(String)")
+    @After("this(com.ttn.component.Circle)")
     void displayAfterInvoked(JoinPoint joinPoint)
     {
         System.out.println("display after invoked ::"+joinPoint.getSignature().getName());
    }
+    @Before("this(com.ttn.component.Triangle)")
+    void displaybeforeInvoked(JoinPoint joinPoint){
+        System.out.println("display before invoked ::"+joinPoint.getSignature().getName());
+    }
+
+    @After("this(com.ttn.component.Triangle)")
+    void displaytriangleAfterInvoked(JoinPoint joinPoint)
+    {
+        System.out.println("display after invoked ::"+joinPoint.getSignature().getName());
+    }
    /*
     @AfterThrowing(pointcut = "execution(void display())",throwing = "ex")
     void afterThrowing(IOException ex){

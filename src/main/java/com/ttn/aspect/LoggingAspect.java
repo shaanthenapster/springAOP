@@ -11,12 +11,12 @@ import java.io.IOException;
 //question1
 @Aspect
 public class LoggingAspect {
- /*  @Before("execution(void display())")
+   @Before("execution(void display())")
     void displayInvoked(JoinPoint joinPoint){
         System.out.println("display before invoked ::"+joinPoint.getSignature().getName());
-    }*/
+    }
 
-    @After("@annotation(Deprecated)")
+    @After("execution(void display())")
     void displayAfterInvoked(JoinPoint joinPoint)
     {
         System.out.println("display after invoked ::"+joinPoint.getSignature().getName());

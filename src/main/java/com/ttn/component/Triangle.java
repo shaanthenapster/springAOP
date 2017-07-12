@@ -7,7 +7,6 @@ import java.io.IOException;
  */
 //question1
 public class Triangle {
-    @Deprecated
     public void display()  {
         System.out.println("inside triangle class display method :");
 

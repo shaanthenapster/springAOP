@@ -15,13 +15,8 @@ import java.io.IOException;
 public class AopMain {
     public static void main(String[] args) throws IOException {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config.xml");
-        /*Circle circle = applicationContext.getBean("circle",Circle.class);
-        circle.display();
-        Triangle triangle = applicationContext.getBean("triangle",Triangle.class);
-        triangle.display();*/
         Shape shape = applicationContext.getBean("shape",Shape.class);
         shape.getCircle().display();
         shape.getTriangle().display();
     }
-
 }
